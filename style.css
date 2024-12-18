@@ -174,3 +174,19 @@ justify-content: center;
   color: #088178;
   background-color: #fddde4;
 }
+
+#feature .fe-box:nth-child(2) h6{
+  background-color: aquamarine;
+}
+#feature .fe-box:nth-child(3) h6{
+  background-color: khaki;
+}
+#feature .fe-box:nth-child(4) h6{
+  background-color: greenyellow;
+}
+#feature .fe-box:nth-child(5) h6{
+  background-color: skyblue;
+}
+#feature .fe-box:nth-child(6) h6{
+  background-color: lightgreen;
+}
