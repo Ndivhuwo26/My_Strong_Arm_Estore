@@ -614,3 +614,61 @@ padding-bottom: 20px;
 
 
      }
+
+
+     @media(max-width: 477px){
+      .section-p1{
+        padding: 20PX;
+      }
+      #header {
+        padding: 10px 30pxpx
+    }
+
+    h1 {
+      font-size: 30PXpx;
+    }
+      
+
+
+    h2 {
+      font-size: 32px;
+    }
+      
+
+    #hero {
+      padding: 0 20px;
+      background-position: 55%;
+  }
+    #feature {
+    justify-content: space-between;
+}
+
+
+  #feature .fe-box{
+    width: 135px;
+    margin: 0 0 15px 0;
+  }
+
+  #product1 .pro{
+    width: 100%;
+  }
+  #banner {
+    height: 40vhS;
+  }
+  
+  #sm-banner .banner-box{
+    height: 40vh;
+  }
+  #sm-banner .banner-box2{
+    margin-top: 20px;
+  }
+  footer .Copyright {
+    text-align: start;
+}
+
+
+  }
+
+
+
+     }
