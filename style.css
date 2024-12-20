@@ -528,6 +528,9 @@ padding-bottom: 20px;
 
      /*media Query*/
      @media(max-width:799px) {
+      .section-p1{
+        padding: 40px 40px;
+      }
       #navbar{
         display: flex;
         flex-direction: column;
@@ -575,6 +578,39 @@ padding-bottom: 20px;
         display: none;
       }
 
+      #hero {
+        height: 90vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #feature {
+      justify-content: center;
+      
+  }
+  #feature .fe-box {
+ 
+    margin: 15px 15px;
+}
+
+  #product1 .pro-container{
+    justify-content: center;
+  }
+  #product1 .pro{
+    margin: 15px;
+  }
+  #banner {
+   
+    height: 20vh;
+  }
+
+   #sm-banner .banner-box {
+    min-width: 500px;
+    height: 30vh;
+   }
+   
+   #newsletters .form{
+    width: 70%;
+   }
 
 
      }
