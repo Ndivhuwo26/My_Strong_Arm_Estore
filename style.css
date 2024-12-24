@@ -142,7 +142,7 @@ display: none;
 
 /*home page*/
 #hero{
-  background-image: url("Images/hero4.png");
+  background-image: url("Images/hr3.jpg");
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -306,7 +306,7 @@ display: none;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-image: url(Images/banner/b2.jpg);
+  background-image: url(Images/hr4.jpg);
   width: 100%;
   height: 40vh;
   background-size: cover;
@@ -314,7 +314,7 @@ display: none;
  }
 
  #banner h4{
-  color: white;
+  color: #1a1a1a;
   font-size: 16px;
  }
  #banner h2{
@@ -344,7 +344,7 @@ display: none;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(Images/banner/b17.jpg);
+  background-image: url(Images/friends\ shopping.jpg);
   min-width: 500px;
   height: 50vh;
   background-size: cover;
@@ -353,16 +353,16 @@ display: none;
  }
 
  #sm-banner .banner-box2{
-  background-image: url(Images/banner/b10.jpg);
+  background-image: url(Images/features/best\ friend\ shopping.jpg);
  }
 
  #sm-banner h4{
-  color: #fff;
+  color: #222;
   font-size: 20px;
   font-weight: 300;
  }
  #sm-banner h2{
-  color: #fff;
+  color: #222222;
   font-size: 28px;
   font-weight: 800;
  }
@@ -390,7 +390,7 @@ display: none;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(Images/banner/b7.jpg);
+  background-image: url(Images/hr5.jpg);
   min-width: 30%;
   height: 30vh;
   background-size: cover;
@@ -400,7 +400,7 @@ display: none;
  }
 
  #banner3 h2{
-  color: #fff;
+  color: red;
   font-weight: 900;
   font-size: 22px;
  }
@@ -621,11 +621,11 @@ padding-bottom: 20px;
         padding: 20PX;
       }
       #header {
-        padding: 10px 30pxpx
+        padding: 10px 30px 0px
     }
 
     h1 {
-      font-size: 30PXpx;
+      font-size: 30px 0px;
     }
       
 
@@ -670,5 +670,3 @@ padding-bottom: 20px;
   }
 
 
-
-     }
