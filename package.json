@@ -1,0 +1,16 @@
+{
+  "name": "my_strong_arm_estore",
+  "version": "1.0.0",
+  "description": "Welcome to My Strong Arm Estore, an e-commerce platform designed to provide a seamless shopping experience. This project showcases a modern frontend built with the latest web technologies.",
+  "main": "js/script.js",
+  "scripts": {
+    "start:api": "json-server --watch db.json --port 5000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["ecommerce", "json-server", "frontend", "mock-api", "shopping"],
+  "author": "kevin Mogakwe",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
