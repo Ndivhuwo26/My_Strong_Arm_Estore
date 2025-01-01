@@ -1,9 +1,104 @@
 {
-    "products": [
-      { "id": 1, "name": "Product 1", "price": 29.99 },
-      { "id": 2, "name": "Product 2", "price": 39.99 },
-      { "id": 3, "name": "Product 3", "price": 49.99 }
-    ],
-    "cart": []
-  }
-  
+  "products": [
+    {
+      "id": "1",
+      "brand": "adidas",
+      "name": "Men low cut",
+      "image": "Images/products/sneakers/adidas_low_cut_black.jpg",
+      "price": "R1,500",
+      "rating": 5,
+      "category": "sneakers"
+    },
+    {
+      "id": "2",
+      "brand": "Air Jordan",
+      "name": "Military Chemo",
+      "image": "Images/products/sneakers/Air_Jordan_4_Military_Chemo.jpg",
+      "price": "R3,860",
+      "rating": 5,
+      "category": "sneakers"
+    },
+    {
+      "id": "3",
+      "brand": "adidas",
+      "name": "Leather Old School Low Cut",
+      "image": "Images/products/sneakers/adidas_leather_vintage_low_cut_sneaker.jpg",
+      "price": "R4,000",
+      "rating": 5,
+      "category": "sneakers"
+    },
+    {
+      "id": "4",
+      "brand": "PRADA",
+      "name": "Dad 100% Cotton Cap",
+      "image": "Images/products/caps/pranda1.jpg",
+      "price": "R2,000",
+      "rating": 5,
+      "category": "caps"
+    },
+    {
+      "id": "5",
+      "brand": "Nike",
+      "name": "High Cut Rainbow IceCream",
+      "image": "Images/products/sneakers/Nike_hoigh_cut_rainbow_icecream.jpg",
+      "price": "R3,500",
+      "rating": 5,
+      "category": "sneakers"
+    },
+    {
+      "id": "6",
+      "brand": "AMR Collection",
+      "name": "Men 100% Cotton Shirt",
+      "image": "Images/products/t-shirt/AMR_ASTON_COLLECTION_T.jpg",
+      "price": "R1,700",
+      "rating": 5,
+      "category": "t-shirts"
+    },
+    {
+      "id": "7",
+      "brand": "Converse",
+      "name": "Men's Chuck 70 Mid Black Sneaker",
+      "image": "Images/products/sneakers/ALL-STAR.jpg",
+      "price": "R2,299",
+      "rating": 5,
+      "category": "sneakers"
+    },
+    {
+      "id": "8",
+      "brand": "PRADA",
+      "name": "Dad 100% Cotton Caps",
+      "image": "Images/products/caps/prada (2).jpg",
+      "price": "R1,800",
+      "rating": 5,
+      "category": "caps"
+    },
+    {
+      "id": "9",
+      "brand": "adidas",
+      "name": "Low Cut Black",
+      "image": "Images/products/sneakers/adidas low cut black.jpg",
+      "price": "R2,500",
+      "rating": 5,
+      "category": "sneakers"
+    },
+    {
+      "id": "10",
+      "brand": "adidas",
+      "name": "Low Cut Sport Lime",
+      "image": "Images/products/sneakers/adidas low cut sport lime n pink n white.jpg",
+      "price": "R3,000",
+      "rating": 5,
+      "category": "sneakers"
+    }
+  ],
+  "cart": [
+    {
+      "id": "1",
+      "quantity": 2
+    },
+    {
+      "id": "2",
+      "quantity": 1
+    }
+  ]
+}
