@@ -5,12 +5,31 @@
   "main": "js/script.js",
   "scripts": {
     "start:api": "json-server --watch db.json --port 5000",
+    "build": "webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["ecommerce", "json-server", "frontend", "mock-api", "shopping"],
+  "keywords": [
+    "ecommerce",
+    "json-server",
+    "frontend",
+    "mock-api",
+    "shopping"
+  ],
   "author": "kevin Mogakwe",
   "license": "ISC",
   "dependencies": {
-    "json-server": "^1.0.0-beta.3"
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "json-server": "^1.0.0-beta.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-bundle-analyzer": "^4.10.2",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^5.2.0"
   }
 }
