@@ -1,193 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Strong Arm Estore - Shopping Cart</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        line-height: 1.6;
+      }
+      header {
+        background: #333;
+        color: #fff;
+        padding: 1rem 0;
+        text-align: center;
+      }
+      header .logo img {
+        max-height: 50px;
+        display: block;
+        margin: 0 auto 10px;
+      }
+      header h1 {
+        margin: 0;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .product {
+        background: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        text-align: center;
+        width: 200px;
+        padding: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      .product h3 {
+        font-size: 1.1rem;
+        margin: 10px 0;
+      }
+      .product p {
+        font-size: 0.9rem;
+        color: #555;
+      }
+      .product button {
+        background: #28a745;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background 0.3s ease;
+      }
+      .product button:hover {
+        background: #218838;
+      }
+      .cart {
+        margin-top: 30px;
+        border-top: 2px solid #333;
+        padding-top: 20px;
+      }
+      .cart h2 {
+        text-align: center;
+      }
+      .cart-items {
+        margin: 20px 0;
+        max-height: 300px;
+        overflow-y: auto;
+      }
+      .cart-items .cart-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .cart-items .cart-item p {
+        margin: 0;
+      }
+      .cart-summary {
+        text-align: right;
+        font-size: 1.2rem;
+      }
+      .cart-summary button {
+        background: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+      .cart-summary button:hover {
+        background: #0056b3;
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Strong Arm Clothing</title>
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <section id="header">
-    <a href="#"><img src="Images/logo_2.png" claas="logo" alt="" /></a>
-
-    <div>
-      <ul id="navbar">
-        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-        <li><a href="shop.html"><i class="fas fa-shopping-bag"></i> Shop</a></li>
-        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
-        <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
-        <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
-        <li><a href="new_arrivals.html"><i class="fas fa-tags"></i> New Arrivals</a></li>
-        <li id="lg-bag"><a class="active" href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-        <a href="#" id="close"><i class="far fa-times"></i></a>
-    </div>
-    <div id="mobile">
-      <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-      <i id="bar" class="fas fa-outdent"></i>
-    </div>
-  </section>
-
-  <section id="page-header" class="about-header">
-    <h2>#Cart/checkout</h2>
-    <marquee bgcolor="#ccc" loop="-2" scrollamount="6" width="100%">Value For Your Money</marquee>
-    <p></p>
-  </section>
-
-  <section id="cart" class="section-p1">
-    <table width="100%">
-      <thead>
-        <tr>
-          <td>Remove</td>
-          <td>Image</td>
-          <td>Product</td>
-          <td>Price</td>
-          <td>Quantity</td>
-          <td>Subtotal</td>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Cart items will be inserted here by JavaScript -->
-      </tbody>
-    </table>
-  </section>
-
-  <section id="cart-add" class="section-p1">
-    <div id="cart-add">
-      <h3>Apply Coupon</h3>
-      <div id="coupon">
-        <input type="text" placeholder="Redeem your Coupon">
-        <button class="normal">Redeem</button>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Images/logo_2.png" alt="My Strong Arm Estore Logo" />
       </div>
-    </div>
+      <h1>My Strong Arm Estore</h1>
+    </header>
 
-    <div id="Subtotal">
-      <h3>Cart Total</h3>
-      <table>
-        <tr>
-          <td>Cart Subtotal</td>
-          <td>R2,800</td>
-        </tr>
-        <tr>
-          <td>Delivery</td>
-          <td>Free</td>
-        </tr>
-        <tr>
-          <td><strong>Total</strong></td>
-          <td><strong>R2,800</strong></td>
-        </tr>
-      </table>
-      <button class="normal">Checkout</button>
-    </div>
-  </section>
-
-  <footer class="section-p1">
-    <div class="col">
-      <img class="logo" src="Images/logo_2.png" alt=""/>
-      <h4>Contact</h4>
-      <p><strong>Address:</strong> 34 kmpton park 1678 street 32 South Africa</p>
-      <p><strong>Phone:</strong> 011 2323 567 / 0790765431</p>
-      <p><strong>Hours:</strong> 10:00am - 17:00pm Mon - Fri</p>
-      <div class="follow">
-        <h4>Follow us</h4>
-        <div class="icon">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-pinterest-p"></i>
+    <div class="container">
+      <!-- Products Section -->
+      <section class="products">
+        <!-- Product 1 -->
+        <div class="product">
+          <img
+            src="img/sneakers/fa3d6a5a89cb4ccfbfd5cb9864455cbe.jpg"
+            alt="Sneakers"
+          />
+          <h3>Sneakers</h3>
+          <p>R2000</p>
+          <button onclick="addToCart('Sneakers', 2000)">Add to Cart</button>
         </div>
-      </div>
+        <!-- Product 2 -->
+        <div class="product">
+          <img src="img/t-shirt/PALM.jpg" alt="T-Shirt" />
+          <h3>PALM T-Shirt</h3>
+          <p>R1700</p>
+          <button onclick="addToCart('PALM T-Shirt', 1700)">Add to Cart</button>
+        </div>
+        <!-- Product 3 -->
+        <div class="product">
+          <img src="img/caps/prada (2).jpg" alt="Cap" />
+          <h3>Prada Cap</h3>
+          <p>R2000</p>
+          <button onclick="addToCart('Prada Cap', 2000)">Add to Cart</button>
+        </div>
+      </section>
+
+      <!-- Shopping Cart Section -->
+      <section class="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items" id="cart-items"></div>
+        <div class="cart-summary">
+          Total: R<span id="cart-total">0.00</span>
+          <button onclick="checkout()">Checkout</button>
+        </div>
+      </section>
     </div>
 
-    <div class="col">
-      <h3>About</h3>
-      <a href="#">About Us</a>
-      <a href="#">Delivery Information</a>
-      <a href="#">Privacy Policy</a>
-      <a href="#">Terms & conditions</a>
-      <a href="#">Contact Us</a>
-    </div>
+    <script>
+      let cart = [];
+      let total = 0;
 
-    <div class="col">
-      <h3>My Account</h3>
-      <a href="#">Sign In</a>
-      <a href="#">View Cart</a>
-      <a href="#">My Wishlist</a>
-      <a href="#">Track My Order</a>
-      <a href="#">Help</a>
-    </div>
+      function addToCart(product, price) {
+        cart.push({ product, price });
+        total += price;
+        updateCart();
+      }
 
-    <div class="col install">
-      <h4>Install App</h4>
-      <p>From App store or Google Play</p>
-      <div class="row">
-        <img src="Images/pay/app.jpg" alt="">
-        <img src="Images/pay/play.jpg" alt="">
-      </div>
-      <p>Secured Payment Gateways</p>
-      <img src="Images/pay/pay.png" alt="">
-    </div>
-
-    <div class="Copyright">
-      <p>All rights reserved 2024, Sabimaru Dev - E-Commerce Store</p>
-    </div>
-  </footer>
-
-  <!-- JavaScript placed here for dynamic cart population -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const apiURL = "http://localhost:5000/cart"; // API URL for cart data
-      const cartTableBody = document.querySelector("table tbody");
-      const totalElement = document.querySelector("#Subtotal td strong");
-
-      // Fetch cart data from the API
-      fetch(apiURL)
-        .then((response) => response.json())
-        .then((cartItems) => {
-          if (cartItems.length === 0) {
-            // Handle empty cart
-            const noItemsMessage = document.createElement('tr');
-            noItemsMessage.innerHTML = '<td colspan="6">Your cart is empty.</td>';
-            cartTableBody.appendChild(noItemsMessage);
-            return;
-          }
-
-          let cartTotal = 0;
-
-          cartItems.forEach((item) => {
-            // Ensure price is correctly formatted
-            const priceString = item.price.replace("R", "").replace(",", "");
-            const price = isNaN(priceString) ? 0 : parseFloat(priceString);
-
-            const subtotal = price * item.quantity;
-
-            // Create a table row for each item
-            const row = document.createElement("tr");
-            row.innerHTML = `
-              <td><a href="#"><i class="far fa-times-circle"></i></a></td>
-              <td><img src="${item.image || 'default-image.jpg'}" alt="${item.name || 'Unnamed Product'}" /></td>
-              <td>${item.name || 'Unnamed Product'}</td>
-              <td>R${price.toFixed(2)}</td>
-              <td><input type="number" value="${item.quantity}" min="1" /></td>
-              <td>R${subtotal.toFixed(2)}</td>
-            `;
-            cartTableBody.appendChild(row);
-
-            // Update total
-            cartTotal += subtotal;
-          });
-
-          // Update total in the cart summary
-          totalElement.textContent = `R${cartTotal.toFixed(2)}`;
-        })
-        .catch((error) => {
-          console.error("Error fetching cart data:", error);
+      function updateCart() {
+        const cartItems = document.getElementById("cart-items");
+        cartItems.innerHTML = "";
+        cart.forEach((item, index) => {
+          const div = document.createElement("div");
+          div.className = "cart-item";
+          div.innerHTML = `
+                    <p>${item.product} - $${item.price.toFixed(2)}</p>
+                    <button onclick="removeFromCart(${index})">Remove</button>
+                `;
+          cartItems.appendChild(div);
         });
-    });
-  </script>
-</body>
+        document.getElementById("cart-total").textContent = total.toFixed(2);
+      }
 
+      function removeFromCart(index) {
+        total -= cart[index].price;
+        cart.splice(index, 1);
+        updateCart();
+      }
+
+      function checkout() {
+        if (cart.length === 0) {
+          alert("Your cart is empty! Add items before checking out.");
+        } else {
+          alert(
+            "Thank you for your purchase! Your total is R" + total.toFixed(2)
+          );
+          cart = [];
+          total = 0;
+          updateCart();
+        }
+      }
+    </script>
+  </body>
 </html>
