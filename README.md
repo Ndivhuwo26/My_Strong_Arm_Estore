@@ -49,7 +49,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - mogakwekevin@gmail.com
+Your Name - kevin mogakwe
+Email - mogakwekevin@gmail.com
 
 Project Link: (https://github.com/Ndivhuwo26/My_Strong_Arm_Estore)
 deployed Link  : https://mystrongarm.netlify.app
