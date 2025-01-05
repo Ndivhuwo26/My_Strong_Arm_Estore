@@ -5,10 +5,9 @@ Welcome to My Strong Arm Estore, an e-commerce platform designed to provide a se
 ## Features
 
 - User-friendly interface
-- Responsive design
+- Responsive design for all type media devices
 - Secure payment gateway
-- Product search and filtering
-- Shopping cart and wishlist
+- Shopping cart 
 
 ## Technologies Used
 
@@ -54,6 +53,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Your Name - [your.email@example.com](mailto:your.email@example.com)
+Your Name - mogakwekevin@gmail.com
 
-Project Link: [https://github.com/yourusername/My_Strong_Arm_Estore](https://github.com/yourusername/My_Strong_Arm_Estore)
+Project Link: (https://github.com/Ndivhuwo26/My_Strong_Arm_Estore)
