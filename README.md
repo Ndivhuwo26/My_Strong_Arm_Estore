@@ -6,7 +6,6 @@ Welcome to My Strong Arm Estore, an e-commerce platform designed to provide a se
 
 - User-friendly interface
 - Responsive design for all type media devices
-- Secure payment gateway
 - Shopping cart 
 
 ## Technologies Used
