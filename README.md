@@ -10,11 +10,10 @@ Welcome to My Strong Arm Estore, an e-commerce platform designed to provide a se
 - Shopping cart 
 
 ## Technologies Used
-
 - HTML5
-- CSS3
-- JavaScript
-- React.js
+- CSS
+- JavaScript 
+ CSS Media Queries,
 
 ## Getting Started
 
@@ -22,21 +21,19 @@ To get a local copy up and running, follow these simple steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/My_Strong_Arm_Estore.git
+   git clone https://Ndivhuwo26/My_Strong_Arm_Estore.git
    ```
 2. Navigate to the project directory:
-   ```sh
+   `
    cd My_Strong_Arm_Estore
    ```
-3. Install dependencies:
-   ```sh
-   npm install
-   ```
-4. Start the development server:
-   ```sh
-   npm start
+3. how
+  index.html
+open with live server
    ```
 
+
+   `
 ## Contributing
 
 Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
